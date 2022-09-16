@@ -8,7 +8,8 @@ public class CadastroTecnologias {
 		Scanner ler = new Scanner(System.in);
 		ArrayList<Backend> listaBackend = new ArrayList<>();
 		ArrayList<Frontend> listaFrontend = new ArrayList<>();
-
+		
+		try {
 		System.out.println("Quantas tecnologias deseja criar?");
 		int qtdTecnologias = ler.nextInt();
 
@@ -68,7 +69,10 @@ public class CadastroTecnologias {
 							+ "Descrição Linguagem: %s \n" + "Descrição Framework: %s",
 					f.getLinguagem(), f.getFramework(), f.getDescLinguagem(), f.getDescFramework());
 		}
-
+		}catch(Exception e) {
+			System.out.println("Erro!" + e.getMessage());
+		}
+		
 		ler.close();
 	}
 }

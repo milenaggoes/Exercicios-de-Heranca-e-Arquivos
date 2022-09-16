@@ -9,7 +9,7 @@ public class Backend extends TecnologiaA implements TecnologiaI {
 		this.conteineriza = conteineriza;
 	}
 
-	public String isConteineriza() {
+	public String Conteineriza() {
 		return conteineriza;
 	}
 
